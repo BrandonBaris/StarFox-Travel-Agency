@@ -1,0 +1,20 @@
+{
+  "name": "StarFox-Travel-Agency",
+  "version": "0.0.0",
+  "homepage": "https://github.com/BrandonBaris/StarFox-Travel-Agency",
+  "authors": [
+    "Brandon Baris <brandonbaris@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1"
+  }
+}

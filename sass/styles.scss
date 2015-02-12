@@ -1,0 +1,15 @@
+@import "partials/settings";
+@import "partials/foundation";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+$dark-color : #fff;
+
+body {
+  background: $dark-color;
+  font-family: "Open Sans", sans-serif;
+}
+
+.b-mo{
+  background-color: #d44;
+  font-size: 4rem;
+}
