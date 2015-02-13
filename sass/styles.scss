@@ -1,15 +1,125 @@
-@import "partials/settings";
-@import "partials/foundation";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import "partials/_settings";
+@import "partials/_foundation";
 
-$dark-color : #fff;
+$strong_dark: #333333;
+$light_dark: #666666;
+$med_color: #99CCCC;
+$light_med: #B1ECEC;
 
 body {
-  background: $dark-color;
-  font-family: "Open Sans", sans-serif;
+  // font-weight: 300;
 }
 
-.b-mo{
+h1 {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 0.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.3em;
+  color: $light_dark;
+}
+
+h2,h3,h4,p {
+  color: #FFF;
+}
+
+span {
+  font-weight: bold;
+}
+
+.small-12 {
+  background-color: #aabbcc;
+  padding: 2em;
+  text-align: center;
+}
+
+.med-12 {
+  padding: 2em;
   background-color: #d44;
-  font-size: 4rem;
+}
+
+.large-12 {
+  background-color: #FFF;
+}
+.large-8 {
+  background-color: blue;
+}
+.large-4 {
+  background-color: red;
+}
+
+header {
+  text-align: center;
+  background-image: url(../images/header_bg.svg);
+  background-color: $med_color;
+
+}
+
+nav {
+  @media #{$medium-up}{
+    width: 30em;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+// main {
+//   margin-top: 2em;
+// }
+
+article {
+  background-color: $light_med;
+  @media #{$medium-only}{
+    border-radius: 0.5em;
+  }
+}
+
+div {
+
+  &.to_the_moon, &.just_around_earth, &.more_deals_large {
+    background-color: purple;
+    padding: 2em;
+    border-radius: 0.5em;
+  }
+}
+
+footer {
+  background-color: $strong_dark;
+  p {
+    color: $light_dark;
+    font-size: 0.8em;
+  }
+}
+.find_out {
+  background-color: $light_dark;
+  color: #FFF;
+  font-size: 0.7em;
+  border-bottom: thick solid $strong_dark;
+  padding: 1em;
+  @media #{$medium-only}{
+    margin: auto;
+    width: 200px;
+  }
+}
+.more_deals_small{
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFF;
+  padding: 2em;
+  text-align: center;
+  background-color: $light_med;
 }

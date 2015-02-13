@@ -4,11 +4,11 @@ meta.foundation-version {
 
 meta.foundation-mq-small {
   font-family: "/only screen/";
-  width: 0; }
+  width: 0em; }
 
 meta.foundation-mq-small-only {
   font-family: "/only screen and (max-width: 40em)/";
-  width: 0; }
+  width: 0em; }
 
 meta.foundation-mq-medium {
   font-family: "/only screen and (min-width:40.063em)/";
@@ -54,10 +54,10 @@ html, body {
 
 body {
   background: #fff;
-  color: #222;
+  color: #333333;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -116,7 +116,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 68.75rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -130,8 +130,8 @@ select {
     margin-right: 0; }
   .row .row {
     width: auto;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem;
+    margin-left: -2.65625rem;
+    margin-right: -2.65625rem;
     margin-top: 0;
     margin-bottom: 0;
     max-width: none; }
@@ -151,8 +151,8 @@ select {
         clear: both; }
 
 .column, .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 2.65625rem;
+  padding-right: 2.65625rem;
   width: 100%;
   float: left; }
 
@@ -261,8 +261,8 @@ select {
     left: auto; }
   .column, .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .small-1 {
     width: 8.33333%; }
@@ -339,8 +339,8 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row.small-uncollapse > .column, .row.small-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; } }
 
 @media only screen and (min-width:40.063em) {
@@ -442,8 +442,8 @@ select {
     left: auto; }
   .column, .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .medium-1 {
     width: 8.33333%; }
@@ -520,8 +520,8 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row.medium-uncollapse > .column, .row.medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -719,8 +719,8 @@ select {
     left: auto; }
   .column, .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .large-1 {
     width: 8.33333%; }
@@ -797,8 +797,8 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row.large-uncollapse > .column, .row.large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -1338,7 +1338,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -1744,7 +1744,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -1994,7 +1994,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
@@ -2191,7 +2191,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 68.75rem;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -2482,7 +2482,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -2603,7 +2603,7 @@ dl dd {
 abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #333333;
   cursor: help; }
 
 abbr {
@@ -3005,10 +3005,90 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-body {
-  background: #fff;
-  font-family: "Open Sans", sans-serif; }
+h1 {
+  font-size: 1em; }
 
-.b-mo {
-  background-color: #d44;
-  font-size: 4rem; }
+h2 {
+  font-size: 0.8em; }
+
+h3 {
+  font-size: 1.5em;
+  text-decoration: underline; }
+
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: 0.3em;
+  color: #666666; }
+
+h2, h3, h4, p {
+  color: #FFF; }
+
+span {
+  font-weight: bold; }
+
+.small-12 {
+  background-color: #aabbcc;
+  padding: 2em;
+  text-align: center; }
+
+.med-12 {
+  padding: 2em;
+  background-color: #d44; }
+
+.large-12 {
+  background-color: #FFF; }
+
+.large-8 {
+  background-color: blue; }
+
+.large-4 {
+  background-color: red; }
+
+header {
+  text-align: center;
+  background-image: url(../images/header_bg.svg);
+  background-color: #99CCCC; }
+
+@media only screen and (min-width:40.063em) {
+  nav {
+    width: 30em;
+    text-align: center;
+    margin: auto; } }
+
+article {
+  background-color: #B1ECEC; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    article {
+      border-radius: 0.5em; } }
+
+div.to_the_moon, div.just_around_earth, div.more_deals_large {
+  background-color: purple;
+  padding: 2em;
+  border-radius: 0.5em; }
+
+footer {
+  background-color: #333333; }
+  footer p {
+    color: #666666;
+    font-size: 0.8em; }
+
+.find_out {
+  background-color: #666666;
+  color: #FFF;
+  font-size: 0.7em;
+  border-bottom: thick solid #333333;
+  padding: 1em; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .find_out {
+      margin: auto;
+      width: 200px; } }
+
+.more_deals_small {
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFF;
+  padding: 2em;
+  text-align: center;
+  background-color: #B1ECEC; }
