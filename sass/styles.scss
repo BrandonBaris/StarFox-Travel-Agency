@@ -16,20 +16,20 @@ h1 {
 }
 
 h2 {
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1em;
   text-decoration: underline;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 0.7em;
 }
 
 h5 {
-  font-size: 0.3em;
+  font-size: 0.5em;
   color: $light_dark;
 }
 
@@ -53,10 +53,10 @@ span {
 }
 
 .large-12 {
-  background-color: #FFF;
+  // background-color: green;
 }
 .large-8 {
-  background-color: blue;
+  // background-color: blue;
 }
 .large-4 {
   background-color: red;
@@ -66,31 +66,40 @@ header {
   text-align: center;
   background-image: url(../images/header_bg.svg);
   background-color: $med_color;
-
+  padding: 2em;
 }
 
 nav {
   @media #{$medium-up}{
-    width: 30em;
+    // margin: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 90%;
     text-align: center;
-    margin: auto;
+    margin-top: -22px;
+    padding-left: 25%;
+    padding-right: 10%;
   }
+    border-radius: 0.5em;
 }
 
 // main {
 //   margin-top: 2em;
 // }
 
-article {
-  background-color: $light_med;
-  @media #{$medium-only}{
-    border-radius: 0.5em;
-  }
-}
+// article {
+//   background-color: $light_med;
+//   @media #{$medium-only}{
+//     border-radius: 0.5em;
+//   }
+// }
 
 div {
 
   &.to_the_moon, &.just_around_earth, &.more_deals_large {
+    // margin-top: 2em;
+    // margin-bottom: 2em;
+    height: 15em;
     background-color: purple;
     padding: 2em;
     border-radius: 0.5em;
@@ -104,8 +113,30 @@ footer {
     font-size: 0.8em;
   }
 }
+.content_large {
+  // margin: 2em;
+  padding: 2em;
+  // height: 25%; 
+  @media #{$medium-up}{
+    border-radius: 0.5em;
+  }
+  background-color: purple;
+}
+.ufo_text, .ufo_side {
+  padding: 2em;
+  height: 15em;
+  background-color: green;
+}
+.ufo_side {
+  // margin-top: 2em;
+}
+.ship_pop {
+  margin-top: -5em;
+  height: 15em;
+}
 .find_out {
   background-color: $light_dark;
+  text-align: center;
   color: #FFF;
   font-size: 0.7em;
   border-bottom: thick solid $strong_dark;
@@ -122,4 +153,14 @@ footer {
   padding: 2em;
   text-align: center;
   background-color: $light_med;
+}
+
+.more_deals_large{
+  // height: 15em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  color: #FFF;
+  // padding: 2em;
+  text-align: center;
+  // background-color: $light_med;
 }

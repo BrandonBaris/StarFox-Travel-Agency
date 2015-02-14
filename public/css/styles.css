@@ -3009,17 +3009,17 @@ h1 {
   font-size: 1em; }
 
 h2 {
-  font-size: 0.8em; }
+  font-size: 0.5em; }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1em;
   text-decoration: underline; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 0.7em; }
 
 h5 {
-  font-size: 0.3em;
+  font-size: 0.5em;
   color: #666666; }
 
 h2, h3, h4, p {
@@ -3037,33 +3037,29 @@ span {
   padding: 2em;
   background-color: #d44; }
 
-.large-12 {
-  background-color: #FFF; }
-
-.large-8 {
-  background-color: blue; }
-
 .large-4 {
   background-color: red; }
 
 header {
   text-align: center;
   background-image: url(../images/header_bg.svg);
-  background-color: #99CCCC; }
+  background-color: #99CCCC;
+  padding: 2em; }
 
-@media only screen and (min-width:40.063em) {
-  nav {
-    width: 30em;
-    text-align: center;
-    margin: auto; } }
-
-article {
-  background-color: #B1ECEC; }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
-    article {
-      border-radius: 0.5em; } }
+nav {
+  border-radius: 0.5em; }
+  @media only screen and (min-width:40.063em) {
+    nav {
+      margin-left: 2em;
+      margin-right: 2em;
+      width: 90%;
+      text-align: center;
+      margin-top: -22px;
+      padding-left: 25%;
+      padding-right: 10%; } }
 
 div.to_the_moon, div.just_around_earth, div.more_deals_large {
+  height: 15em;
   background-color: purple;
   padding: 2em;
   border-radius: 0.5em; }
@@ -3074,8 +3070,25 @@ footer {
     color: #666666;
     font-size: 0.8em; }
 
+.content_large {
+  padding: 2em;
+  background-color: purple; }
+  @media only screen and (min-width:40.063em) {
+    .content_large {
+      border-radius: 0.5em; } }
+
+.ufo_text, .ufo_side {
+  padding: 2em;
+  height: 15em;
+  background-color: green; }
+
+.ship_pop {
+  margin-top: -5em;
+  height: 15em; }
+
 .find_out {
   background-color: #666666;
+  text-align: center;
   color: #FFF;
   font-size: 0.7em;
   border-bottom: thick solid #333333;
@@ -3092,3 +3105,9 @@ footer {
   padding: 2em;
   text-align: center;
   background-color: #B1ECEC; }
+
+.more_deals_large {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  color: #FFF;
+  text-align: center; }
