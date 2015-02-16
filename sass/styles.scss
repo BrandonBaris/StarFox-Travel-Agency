@@ -63,8 +63,8 @@ span {
 
 .small-12 {
   // background-color: #aabbcc;
-  padding: 2rem;
-  text-align: center;
+  // padding: 2rem;
+  // text-align: center;
 }
 
 .med-12 {
@@ -131,20 +131,24 @@ footer {
     font-size: 0.8rem;
   }
 }
+main {
+    text-align: center;
+    padding: 2rem;
+}
 .content_large {
   // margin: 2em;
   padding: 2em;
-  // height: 25%; 
+  height: 300px;
   @media #{$medium-up}{
     border-radius: 0.5rem;
-    margin-top: 2rem;
+    margin: 2rem;
   }
-  background-color: $light_med;
+  background-color: $med_color;
 }
 .ufo_text, .ufo_side {
   padding: 2rem;
   height: 15rem;
-  background-color: $light_med;
+  background-color: $med_color;
 }
 .ufo_text{
   // color: $strong_dark;

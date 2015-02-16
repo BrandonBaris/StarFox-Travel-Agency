@@ -3047,10 +3047,6 @@ h2, h3, h4, h5, h6 {
 span {
   font-weight: bold; }
 
-.small-12 {
-  padding: 2rem;
-  text-align: center; }
-
 header {
   text-align: center;
   background-image: url(../images/header_bg.svg);
@@ -3081,18 +3077,23 @@ footer {
     color: #666666;
     font-size: 0.8rem; }
 
+main {
+  text-align: center;
+  padding: 2rem; }
+
 .content_large {
   padding: 2em;
-  background-color: #B1ECEC; }
+  height: 300px;
+  background-color: #99CCCC; }
   @media only screen and (min-width:40.063em) {
     .content_large {
       border-radius: 0.5rem;
-      margin-top: 2rem; } }
+      margin: 2rem; } }
 
 .ufo_text, .ufo_side {
   padding: 2rem;
   height: 15rem;
-  background-color: #B1ECEC; }
+  background-color: #99CCCC; }
 
 .ship_pop {
   margin-top: -5rem;
