@@ -8,48 +8,68 @@ $med_color: #99CCCC;
 $light_med: #B1ECEC;
 
 body {
-  // font-weight: 300;
+  font-weight: 300;
 }
-
+a {
+  color: #FFF;
+  font-size: 1rem;
+}
 h1 {
-  font-size: 1em;
+  font-size: 1rem;
+  padding-bottom: 2rem;
 }
 
 h2 {
-  font-size: 0.5em;
+  font-size: 1.3rem;
+  padding: 1rem 2rem 1rem;
 }
+.lineage {
 
+}
 h3 {
-  font-size: 1em;
+  padding: 1rem;
+  font-size: 4rem;
   text-decoration: underline;
+  border-top: thin solid #FFF;
+
 }
 
 h4 {
-  font-size: 0.7em;
+  padding: 0 1rem 1rem;
+  font-size: 0.8rem;
+  color: #FFF;
 }
 
 h5 {
-  font-size: 0.5em;
-  color: $light_dark;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  font-size: 1rem;
 }
 
-h2,h3,h4,p {
+h6 {
+  padding-bottom: 1rem;
+  border-bottom: thin solid #FFF;
+  font-size: 2rem;
+}
+
+h2,h3,h4,h5,h6 {
   color: #FFF;
 }
 
 span {
   font-weight: bold;
+
 }
 
 .small-12 {
-  background-color: #aabbcc;
-  padding: 2em;
+  // background-color: #aabbcc;
+  padding: 2rem;
   text-align: center;
 }
 
 .med-12 {
-  padding: 2em;
-  background-color: #d44;
+  // padding: 2rem;
+  // background-color: #d44;
 }
 
 .large-12 {
@@ -59,50 +79,48 @@ span {
   // background-color: blue;
 }
 .large-4 {
-  background-color: red;
+  // background-color: red;
 }
 
 header {
   text-align: center;
   background-image: url(../images/header_bg.svg);
   background-color: $med_color;
-  padding: 2em;
+  // padding: 2rem;
 }
 
 nav {
   @media #{$medium-up}{
     // margin: auto;
-    margin-left: 2em;
-    margin-right: 2em;
-    width: 90%;
-    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    // width: 90%;
+    // text-align: center;
     margin-top: -22px;
-    padding-left: 25%;
-    padding-right: 10%;
+    // padding-left: 30%;
+    // padding-right: 10%;
+    padding: 0 0 0 30%;
   }
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
+
 }
 
-// main {
-//   margin-top: 2em;
-// }
-
-// article {
-//   background-color: $light_med;
-//   @media #{$medium-only}{
-//     border-radius: 0.5em;
-//   }
-// }
+.name {
+  padding-left: 1em;
+}
 
 div {
 
   &.to_the_moon, &.just_around_earth, &.more_deals_large {
     // margin-top: 2em;
     // margin-bottom: 2em;
-    height: 15em;
-    background-color: purple;
-    padding: 2em;
-    border-radius: 0.5em;
+    height: 18rem;
+    background-color: $light_dark;
+    // padding: 1em;
+    border-radius: 0.5rem;
+  }
+  &.p {
+    color: $strong_dark;
   }
 }
 
@@ -110,7 +128,7 @@ footer {
   background-color: $strong_dark;
   p {
     color: $light_dark;
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 }
 .content_large {
@@ -118,27 +136,31 @@ footer {
   padding: 2em;
   // height: 25%; 
   @media #{$medium-up}{
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
   }
-  background-color: purple;
+  background-color: $light_med;
 }
 .ufo_text, .ufo_side {
-  padding: 2em;
-  height: 15em;
-  background-color: green;
+  padding: 2rem;
+  height: 15rem;
+  background-color: $light_med;
+}
+.ufo_text{
+  // color: $strong_dark;
 }
 .ufo_side {
   // margin-top: 2em;
 }
 .ship_pop {
-  margin-top: -5em;
-  height: 15em;
+  margin-top: -5rem;
+  height: 12rem;
 }
 .find_out {
   background-color: $light_dark;
   text-align: center;
   color: #FFF;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   border-bottom: thick solid $strong_dark;
   padding: 1em;
   @media #{$medium-only}{
@@ -150,15 +172,15 @@ footer {
   font-size: 1em;
   font-weight: bold;
   color: #FFF;
-  padding: 2em;
+  padding: 2rem;
   text-align: center;
   background-color: $light_med;
 }
 
 .more_deals_large{
   // height: 15em;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   color: #FFF;
   // padding: 2em;
   text-align: center;

@@ -3005,92 +3005,104 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
+body {
+  font-weight: 300; }
+
+a {
+  color: #FFF;
+  font-size: 1rem; }
+
 h1 {
-  font-size: 1em; }
+  font-size: 1rem;
+  padding-bottom: 2rem; }
 
 h2 {
-  font-size: 0.5em; }
+  font-size: 1.3rem;
+  padding: 1rem 2rem 1rem; }
 
 h3 {
-  font-size: 1em;
-  text-decoration: underline; }
+  padding: 1rem;
+  font-size: 4rem;
+  text-decoration: underline;
+  border-top: thin solid #FFF; }
 
 h4 {
-  font-size: 0.7em; }
+  padding: 0 1rem 1rem;
+  font-size: 0.8rem;
+  color: #FFF; }
 
 h5 {
-  font-size: 0.5em;
-  color: #666666; }
+  padding-top: 1rem;
+  padding-bottom: 0;
+  font-size: 1rem; }
 
-h2, h3, h4, p {
+h6 {
+  padding-bottom: 1rem;
+  border-bottom: thin solid #FFF;
+  font-size: 2rem; }
+
+h2, h3, h4, h5, h6 {
   color: #FFF; }
 
 span {
   font-weight: bold; }
 
 .small-12 {
-  background-color: #aabbcc;
-  padding: 2em;
+  padding: 2rem;
   text-align: center; }
-
-.med-12 {
-  padding: 2em;
-  background-color: #d44; }
-
-.large-4 {
-  background-color: red; }
 
 header {
   text-align: center;
   background-image: url(../images/header_bg.svg);
-  background-color: #99CCCC;
-  padding: 2em; }
+  background-color: #99CCCC; }
 
 nav {
-  border-radius: 0.5em; }
+  border-radius: 0.5rem; }
   @media only screen and (min-width:40.063em) {
     nav {
-      margin-left: 2em;
-      margin-right: 2em;
-      width: 90%;
-      text-align: center;
+      margin-left: 2rem;
+      margin-right: 2rem;
       margin-top: -22px;
-      padding-left: 25%;
-      padding-right: 10%; } }
+      padding: 0 0 0 30%; } }
+
+.name {
+  padding-left: 1em; }
 
 div.to_the_moon, div.just_around_earth, div.more_deals_large {
-  height: 15em;
-  background-color: purple;
-  padding: 2em;
-  border-radius: 0.5em; }
+  height: 18rem;
+  background-color: #666666;
+  border-radius: 0.5rem; }
+div.p {
+  color: #333333; }
 
 footer {
   background-color: #333333; }
   footer p {
     color: #666666;
-    font-size: 0.8em; }
+    font-size: 0.8rem; }
 
 .content_large {
   padding: 2em;
-  background-color: purple; }
+  background-color: #B1ECEC; }
   @media only screen and (min-width:40.063em) {
     .content_large {
-      border-radius: 0.5em; } }
+      border-radius: 0.5rem;
+      margin-top: 2rem; } }
 
 .ufo_text, .ufo_side {
-  padding: 2em;
-  height: 15em;
-  background-color: green; }
+  padding: 2rem;
+  height: 15rem;
+  background-color: #B1ECEC; }
 
 .ship_pop {
-  margin-top: -5em;
-  height: 15em; }
+  margin-top: -5rem;
+  height: 12rem; }
 
 .find_out {
   background-color: #666666;
   text-align: center;
   color: #FFF;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   border-bottom: thick solid #333333;
   padding: 1em; }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
@@ -3102,12 +3114,12 @@ footer {
   font-size: 1em;
   font-weight: bold;
   color: #FFF;
-  padding: 2em;
+  padding: 2rem;
   text-align: center;
   background-color: #B1ECEC; }
 
 .more_deals_large {
-  margin-bottom: 2em;
-  margin-top: 2em;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   color: #FFF;
   text-align: center; }
