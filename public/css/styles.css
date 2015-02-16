@@ -3008,10 +3008,6 @@ th.hide-for-touch {
 body {
   font-weight: 300; }
 
-a {
-  color: #FFF;
-  font-size: 1rem; }
-
 h1 {
   font-size: 1rem;
   padding-bottom: 2rem; }
@@ -3044,6 +3040,10 @@ h6 {
 h2, h3, h4, h5, h6 {
   color: #FFF; }
 
+a {
+  color: #99CCCC;
+  font-size: 1rem; }
+
 span {
   font-weight: bold; }
 
@@ -3067,7 +3067,7 @@ nav {
 div.to_the_moon, div.just_around_earth, div.more_deals_large {
   height: 18rem;
   background-color: #666666;
-  border-radius: 0.5rem; }
+  border-radius: 0.3rem; }
 div.p {
   color: #333333; }
 
@@ -3078,17 +3078,13 @@ footer {
     font-size: 0.8rem; }
 
 main {
-  text-align: center;
-  padding: 2rem; }
+  text-align: center; }
 
 .content_large {
-  padding: 2em;
-  height: 300px;
   background-color: #99CCCC; }
   @media only screen and (min-width:40.063em) {
     .content_large {
-      border-radius: 0.5rem;
-      margin: 2rem; } }
+      border-radius: 0.8rem; } }
 
 .ufo_text, .ufo_side {
   padding: 2rem;
@@ -3105,11 +3101,8 @@ main {
   color: #FFF;
   font-size: 0.7rem;
   border-bottom: thick solid #333333;
-  padding: 1em; }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
-    .find_out {
-      margin: auto;
-      width: 200px; } }
+  padding: 1rem;
+  margin-bottom: 2rem; }
 
 .more_deals_small {
   font-size: 1em;
@@ -3120,7 +3113,5 @@ main {
   background-color: #B1ECEC; }
 
 .more_deals_large {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
   color: #FFF;
   text-align: center; }
