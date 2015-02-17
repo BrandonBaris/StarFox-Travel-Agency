@@ -59,13 +59,13 @@ h3 {
 }
 
 .med_block {
-    @media #{$medium-only}{
-    text-align: left;
-    border-left: thin solid #555;
-    float: right;
-    height: 100%;
-    width: 55%;
-    padding: 3rem;
+  @media #{$medium-only}{
+  text-align: left;
+  border-left: thin solid #555;
+  float: right;
+  height: 100%;
+  width: 55%;
+  padding: 3rem;
   }
 }
 
@@ -104,17 +104,18 @@ header {
 }
 
 nav {
+  border-radius: 0.5rem;
   @media #{$medium-up}{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: -22px;
   }
 
-a {
-  color: $med_color;
-    &:hover{
-      color: #FFF;
-    }
+  a {
+    color: $med_color;
+      &:hover{
+        color: #FFF;
+      }
   }
 
   &.medbar {
@@ -125,27 +126,26 @@ a {
       background-color: $strong_dark;
       border-radius: 0.5rem;
       margin: 0;
-        li {
-          background-color: $strong_dark;
-          width: 100px;
-          font-size: 0.7rem;
-          display: inline-block;
-        }
+      li {
+        background-color: $strong_dark;
+        width: 100px;
+        font-size: 0.7rem;
+        display: inline-block;
       }
     }
-  border-radius: 0.5rem;
   }
+}
  
 
 .name {
   padding-left: 1em;
 }
 .fade {
-   -o-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .fade:hover {
@@ -154,7 +154,6 @@ a {
 }
 
 div {
-
   &.dealbox, &.more_deals_large {
     margin-bottom: 2rem;
     @media #{$medium-only}{
@@ -164,10 +163,6 @@ div {
     background-color: $light_dark;
     border-radius: 0.5rem;
   }
-
-  &.dealbox:hover {
-  }
-
   &.p {
     color: $strong_dark;
   }
@@ -256,6 +251,7 @@ main {
     margin-bottom: 2rem;
   }
 }
+
 .more_deals_small{
   color: #FFF;
   padding: 0.5rem;
