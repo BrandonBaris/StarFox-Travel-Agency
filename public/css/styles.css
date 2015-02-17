@@ -1920,7 +1920,7 @@ meta.foundation-mq-topbar {
       margin: 0; }
       .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
         font-weight: normal;
-        color: #FFFFFF;
+        color: #99CCCC;
         width: 75%;
         display: block;
         padding: 0 0.9375rem; }
@@ -1929,7 +1929,7 @@ meta.foundation-mq-topbar {
     right: 0;
     top: 0; }
     .top-bar .toggle-topbar a {
-      color: #FFFFFF;
+      color: #99CCCC;
       text-transform: uppercase;
       font-size: 0.8125rem;
       font-weight: bold;
@@ -1991,7 +1991,7 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
-      color: #FFFFFF;
+      color: #99CCCC;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
       font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
@@ -2149,7 +2149,7 @@ meta.foundation-mq-topbar {
         margin-top: 0;
         font-size: 1.125rem; }
         .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-          color: #FFFFFF;
+          color: #99CCCC;
           display: block; }
           .top-bar-section .dropdown li.title h5 a:hover, .top-bar-section .dropdown li.parent-link a:hover {
             background: none; }
@@ -2456,11 +2456,11 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: #FFF;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #dbdbdb; }
   a img {
     border: none; }
 
@@ -3005,44 +3005,41 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-body {
-  font-weight: 300; }
+a {
+  color: #FFF; }
 
 h1 {
   font-size: 1rem;
   padding-bottom: 2rem; }
 
 h2 {
-  font-size: 1.3rem;
-  padding: 1rem 2rem 1rem; }
+  font-size: 1rem;
+  padding: 0.5rem 2rem 0.5rem; }
 
 h3 {
-  padding: 1rem;
-  font-size: 4rem;
+  padding: 2rem;
+  font-size: 2.5rem;
   text-decoration: underline;
   border-top: thin solid #FFF; }
 
 h4 {
-  padding: 0 1rem 1rem;
-  font-size: 0.8rem;
+  padding: 0 4rem 2rem;
+  font-size: 0.5rem;
   color: #FFF; }
 
 h5 {
   padding-top: 1rem;
   padding-bottom: 0;
-  font-size: 1rem; }
+  font-size: 0.7rem; }
 
 h6 {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   border-bottom: thin solid #FFF;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin: 0; }
 
 h2, h3, h4, h5, h6 {
   color: #FFF; }
-
-a {
-  color: #99CCCC;
-  font-size: 1rem; }
 
 span {
   font-weight: bold; }
@@ -3059,32 +3056,53 @@ nav {
       margin-left: 2rem;
       margin-right: 2rem;
       margin-top: -22px;
-      padding: 0 0 0 30%; } }
+      padding: 0 13% 0 13%; } }
 
 .name {
   padding-left: 1em; }
 
-div.to_the_moon, div.just_around_earth, div.more_deals_large {
+.fade {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: 0.5s; }
+
+.fade:hover {
+  background-color: #333333;
+  transition: 0.5s; }
+
+div.dealbox, div.more_deals_large {
+  margin-bottom: 2rem;
   height: 18rem;
   background-color: #666666;
-  border-radius: 0.3rem; }
+  border-radius: 0.5rem; }
 div.p {
   color: #333333; }
 
 footer {
+  text-align: center;
   background-color: #333333; }
   footer p {
+    padding: 1rem 2rem 0;
     color: #666666;
-    font-size: 0.8rem; }
+    font-size: 0.1rem; }
 
 main {
   text-align: center; }
 
+.columns {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
 .content_large {
+  margin-bottom: 2rem;
+  padding-top: 4rem;
   background-color: #99CCCC; }
   @media only screen and (min-width:40.063em) {
     .content_large {
-      border-radius: 0.8rem; } }
+      border-radius: 0.3rem;
+      margin: 2rem; } }
 
 .ufo_text, .ufo_side {
   padding: 2rem;
@@ -3103,15 +3121,20 @@ main {
   border-bottom: thick solid #333333;
   padding: 1rem;
   margin-bottom: 2rem; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .find_out {
+      margin: 0 35% 2rem; } }
 
 .more_deals_small {
-  font-size: 1em;
-  font-weight: bold;
   color: #FFF;
-  padding: 2rem;
-  text-align: center;
-  background-color: #B1ECEC; }
+  padding: 0.5rem;
+  background-color: #99CCCC; }
 
 .more_deals_large {
   color: #FFF;
   text-align: center; }
+  .more_deals_large div {
+    background-color: #666666;
+    height: 3.2rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem; }
