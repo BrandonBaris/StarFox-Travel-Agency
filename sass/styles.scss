@@ -8,30 +8,37 @@ $med_color: #99CCCC;
 $light_med: #B1ECEC;
 
 body {
-  // font-weight: 300;
+  font-weight: 300;
 }
 
 a{
   color: #FFF;
 }
+
 h1 {
   font-size: 1rem;
   padding-bottom: 2rem;
+  b {
+    font-weight: bold;
+  }
 }
 
 h2 {
   font-size: 1rem;
   padding: 0.5rem 2rem 0.5rem;
 }
+
 .lineage {
 
 }
+
 h3 {
   padding: 2rem;
   font-size: 2.5rem;
   // height: 40%;
-  text-decoration: underline;
-  border-top: thin solid #FFF;
+  // text-decoration: underline;
+  // border-bottom: thick solid #FFF;
+  border-top: thin groove #FFF;
 }
 
 h4 {
@@ -59,8 +66,9 @@ h2,h3,h4,h5,h6 {
 }
 
 span {
-  font-weight: bold;
-
+  // font-weight: 900;
+  color: $med_color;
+  font-size: 1.1rem;
 }
 
 .small-12 {
@@ -83,10 +91,7 @@ span {
 .large-4 {
   // background-color: red;
 }
-// .row {
-//   padding: 0;
-//   margin: 0;
-// }
+
 header {
   text-align: center;
   background-image: url(../images/header_bg.svg);
@@ -96,6 +101,7 @@ header {
 
 nav {
   @media #{$medium-up}{
+    // float: none;
     // margin: auto;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -104,38 +110,58 @@ nav {
     margin-top: -22px;
     // padding-left: 30%;
     // padding-right: 10%;
-    padding: 0 13% 0 13%;
+    // padding: 0 10% 0 25%;
   }
-    border-radius: 0.5rem;
 
-}
+  &.medbar {
+    ul {
+      padding: 0.5rem;
+      display: block;
+      text-align: center;
+      background-color: $strong_dark;
+        border-radius: 0.5rem;
+
+        li {
+          background-color: $strong_dark;
+          color: #142;
+          display: inline-block;
+        }
+      }
+    }
+  border-radius: 0.5rem;
+  }
+
+
+ 
 
 .name {
   padding-left: 1em;
 }
 .fade {
-   -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+   -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
 .fade:hover {
-      background-color: $strong_dark;
-    transition: 0.5s;
-
+  background-color: $strong_dark;
+  transition: 0.5s;
 }
+
 div {
 
   &.dealbox, &.more_deals_large {
     // margin-top: 2em;
     margin-bottom: 2rem;
+    @media #{$medium-only}{
+      height: 15rem;
+    }
     height: 18rem;
     background-color: $light_dark;
     // padding: 1em;
     border-radius: 0.5rem;
- 
   }
 
   &.dealbox:hover {
@@ -155,6 +181,7 @@ footer {
     font-size: 0.1rem;
   }
 }
+
 main {
     text-align: center;
     // padding: 2rem;
@@ -166,7 +193,7 @@ main {
 }
 .content_large {
   margin-bottom: 2rem;
-  padding-top: 4rem;
+  // padding-top: 4rem;
   // padding: 2rem;
   // display: block;
   @media #{$small-only}{
@@ -181,19 +208,41 @@ main {
 }
 .ufo_text, .ufo_side {
   padding: 2rem;
-  height: 15rem;
+  // height: 15rem;
   background-color: $med_color;
 }
 .ufo_text{
-  // color: $strong_dark;
+  @media #{$large-up}{
+    p { 
+    font-size: 1.3rem;
+  }
+    text-align: left;
+    padding: 2rem;
+  }
+  padding: 0 2rem 0;
 }
 .ufo_side {
-  // margin-top: 2em;
+  padding-right: 4rem;
+  border-radius: 0.5rem;
+  // padding-bottom: 4rem;
 }
+
 .ship_pop {
-  margin-top: -5rem;
-  height: 12rem;
+  @media #{$small-only}{
+    margin-top: 0;
+  }
+    @media #{$medium-only}{
+    margin-top: -3rem;
+  }
+    @media #{$large-up}{
+    margin-top: -5.5rem;
+    margin-bottom: 0;
+  }
+  width: 14rem;
+  margin-bottom: -4rem;
+  
 }
+
 .find_out {
   background-color: $light_dark;
   text-align: center;
@@ -201,10 +250,13 @@ main {
   font-size: 0.7rem;
   border-bottom: thick solid $strong_dark;
   padding: 1rem;
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   @media #{$medium-only}{
     margin: 0 35% 2rem;
     // width: 200px;
+  }
+  @media #{$small-only}{
+    margin-bottom: 2rem;
   }
 }
 .more_deals_small{

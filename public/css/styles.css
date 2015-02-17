@@ -3005,12 +3005,17 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
+body {
+  font-weight: 300; }
+
 a {
   color: #FFF; }
 
 h1 {
   font-size: 1rem;
   padding-bottom: 2rem; }
+  h1 b {
+    font-weight: bold; }
 
 h2 {
   font-size: 1rem;
@@ -3019,8 +3024,7 @@ h2 {
 h3 {
   padding: 2rem;
   font-size: 2.5rem;
-  text-decoration: underline;
-  border-top: thin solid #FFF; }
+  border-top: thin groove #FFF; }
 
 h4 {
   padding: 0 4rem 2rem;
@@ -3042,7 +3046,8 @@ h2, h3, h4, h5, h6 {
   color: #FFF; }
 
 span {
-  font-weight: bold; }
+  color: #99CCCC;
+  font-size: 1.1rem; }
 
 header {
   text-align: center;
@@ -3055,17 +3060,26 @@ nav {
     nav {
       margin-left: 2rem;
       margin-right: 2rem;
-      margin-top: -22px;
-      padding: 0 13% 0 13%; } }
+      margin-top: -22px; } }
+  nav.medbar ul {
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 0.5rem; }
+    nav.medbar ul li {
+      background-color: #333333;
+      color: #142;
+      display: inline-block; }
 
 .name {
   padding-left: 1em; }
 
 .fade {
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
   transition: 0.5s; }
 
 .fade:hover {
@@ -3077,6 +3091,9 @@ div.dealbox, div.more_deals_large {
   height: 18rem;
   background-color: #666666;
   border-radius: 0.5rem; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    div.dealbox, div.more_deals_large {
+      height: 15rem; } }
 div.p {
   color: #333333; }
 
@@ -3097,7 +3114,6 @@ main {
 
 .content_large {
   margin-bottom: 2rem;
-  padding-top: 4rem;
   background-color: #99CCCC; }
   @media only screen and (min-width:40.063em) {
     .content_large {
@@ -3106,12 +3122,34 @@ main {
 
 .ufo_text, .ufo_side {
   padding: 2rem;
-  height: 15rem;
   background-color: #99CCCC; }
 
+.ufo_text {
+  padding: 0 2rem 0; }
+  @media only screen and (min-width:64.063em) {
+    .ufo_text {
+      text-align: left;
+      padding: 2rem; }
+      .ufo_text p {
+        font-size: 1.3rem; } }
+
+.ufo_side {
+  padding-right: 4rem;
+  border-radius: 0.5rem; }
+
 .ship_pop {
-  margin-top: -5rem;
-  height: 12rem; }
+  width: 14rem;
+  margin-bottom: -4rem; }
+  @media only screen and (max-width: 40em) {
+    .ship_pop {
+      margin-top: 0; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .ship_pop {
+      margin-top: -3rem; } }
+  @media only screen and (min-width:64.063em) {
+    .ship_pop {
+      margin-top: -5.5rem;
+      margin-bottom: 0; } }
 
 .find_out {
   background-color: #666666;
@@ -3119,11 +3157,13 @@ main {
   color: #FFF;
   font-size: 0.7rem;
   border-bottom: thick solid #333333;
-  padding: 1rem;
-  margin-bottom: 2rem; }
+  padding: 1rem; }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .find_out {
       margin: 0 35% 2rem; } }
+  @media only screen and (max-width: 40em) {
+    .find_out {
+      margin-bottom: 2rem; } }
 
 .more_deals_small {
   color: #FFF;
