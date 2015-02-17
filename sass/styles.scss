@@ -30,20 +30,47 @@ h1 {
 h2 {
   font-size: 1rem;
   padding: 0.5rem 2rem 0.5rem;
+  border-bottom: thin solid #555;
+  margin: 0;
+  @media #{$medium-only}{
+    border-bottom: 0;
+  }
 }
 
 h3 {
+  margin: 0;
+  font-weight: 300;
   padding: 2rem;
   font-size: 2.5rem;
-  border-top: thin groove #FFF;
+  border-top: thin solid #777;
+  @media #{$medium-only}{
+    padding: 3rem;
+    border-right: thin solid #777;
+    width: 45%;
+    display: block;
+    font-size: 3rem;
+    float: left;
+    height: 100%;
+    }
 }
 
 .underliner{
   border-bottom: thick solid #FFF;
 }
 
+.med_block {
+    @media #{$medium-only}{
+    text-align: left;
+    border-left: thin solid #555;
+    float: right;
+    height: 100%;
+    width: 55%;
+    padding: 3rem;
+  }
+}
+
 h4 {
-  padding: 0 4rem 2rem;
+  padding: 0 2rem 2rem;
   font-size: 0.5rem;
   color: #FFF;
 }
@@ -52,13 +79,18 @@ h5 {
   padding-top: 1rem;
   padding-bottom: 0;
   font-size: 0.7rem;
+  border-top: thin solid #777;
+  margin: 0;
 }
 
 h6 {
   padding-bottom: 2rem;
-  border-bottom: thin solid #FFF;
+  border-bottom: thin solid #555;
   font-size: 2rem;
   margin: 0;
+  @media #{$medium-only}{
+    border-bottom: 0;
+  }
 }
 
 h2,h3,h4,h5,h6 {
@@ -124,14 +156,12 @@ a {
 div {
 
   &.dealbox, &.more_deals_large {
-    // margin-top: 2em;
     margin-bottom: 2rem;
     @media #{$medium-only}{
       height: 15rem;
     }
     height: 18rem;
     background-color: $light_dark;
-    // padding: 1em;
     border-radius: 0.5rem;
   }
 
@@ -161,6 +191,7 @@ main {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
 .content_large {
   margin-bottom: 2rem;
   @media #{$small-only}{
@@ -242,3 +273,7 @@ main {
   }
 }
 
+.deal_spacer {
+  padding-top: 1rem;
+  border-top: thin solid #777;
+}
