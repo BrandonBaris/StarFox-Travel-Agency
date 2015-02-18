@@ -85,6 +85,7 @@ h5 {
 }
 
 h6 {
+  font-weight: 300;
   padding-bottom: 2rem;
   border-bottom: thin solid #555;
   font-size: 2rem;
@@ -212,6 +213,7 @@ main {
   }
   @media #{$large-up}{
     p { 
+    font-weight: 300;
     font-size: 1.3rem;
   }
     text-align: left;
@@ -266,13 +268,15 @@ main {
   text-align: center;
   div {
     background-color: $light_dark;
-    height: 3.2rem;
+    height: 4.4rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
   }
 }
 
 .deal_spacer {
+  // height: 4rem;
   padding-top: 1rem;
+  // padding-bottom: 1rem;
   border-top: thin solid #777;
 }

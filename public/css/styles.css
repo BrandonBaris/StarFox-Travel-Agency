@@ -3071,6 +3071,7 @@ h5 {
   margin: 0; }
 
 h6 {
+  font-weight: 300;
   padding-bottom: 2rem;
   border-bottom: thin solid #555;
   font-size: 2rem;
@@ -3173,6 +3174,7 @@ main {
       text-align: left;
       padding: 2rem; }
       .ufo_text p {
+        font-weight: 300;
         font-size: 1.3rem; } }
 
 .ufo_side {
@@ -3217,7 +3219,7 @@ main {
   text-align: center; }
   .more_deals_large div {
     background-color: #666666;
-    height: 3.2rem;
+    height: 4.4rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem; }
 
