@@ -11,13 +11,13 @@ body {
   font-weight: 300;
 }
 
-a{
+a {
   color: #FFF;
 }
 
 h1 {
-  font-size: 1rem;
-  padding-bottom: 2rem;
+  font-size: 2rem;
+  padding-bottom: 4rem;
   span {
     color: #000;
     font-weight: bold;
@@ -25,39 +25,42 @@ h1 {
 }
 
 .star {
+    font-size: 2rem;
+    letter-spacing: 1px;
     color: $med_color;
    }
 
 h2 {
-  font-size: 1rem;
-  padding: 1rem 2rem 1rem;
+  font-size: 2rem;
+  padding: 1rem;
   border-bottom: thin solid #555;
   margin: 0;
   @media #{$medium-only}{
+    font-size: 1.7rem;
     border-bottom: 0;
   }
 }
 
 h3 {
   margin: 0;
-  font-weight: 300;
+  font-weight: 100;
   padding: 2rem;
-  font-size: 2.5rem;
+  font-size: 4rem;
   border-top: thin solid #777;
   @media #{$medium-only}{
-    padding: 3rem;
+    padding: 4rem;
     border-top: 0;
     border-right: thin solid #777;
     width: 45%;
     display: block;
-    font-size: 3rem;
+    font-size: 4rem;
     float: left;
     height: 100%;
   }
 }
 
 .underliner{
-  border-bottom: thick solid #FFF;
+  border-bottom: 0.6rem solid #FFF;
 }
 
 .med_block {
@@ -72,15 +75,19 @@ h3 {
 }
 
 h4 {
-  padding: 0 2rem 2rem;
-  font-size: 0.6rem;
+  padding: 0 1rem 2rem;
+  font-weight: 100;
+  font-size: 1rem;
   color: #FFF;
+  @media #{$small-only}{
+    padding: 0 6rem 2rem;
+  }
 }
 
 h5 {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 0;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
   border-top: thin solid #777;
   margin: 0;
   @media #{$large-up}{
@@ -90,9 +97,9 @@ h5 {
 
 h6 {
   font-weight: 300;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   border-bottom: thin solid #555;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin: 0;
   @media #{$medium-only}{
     border-bottom: 0;
@@ -112,10 +119,10 @@ header {
 
 nav {
   border-radius: 0.5rem;
-  @media #{$medium-up}{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: -22px;
+  @media #{$medium-only}{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: -36px;
   }
 
   a {
@@ -136,23 +143,23 @@ nav {
       li {
         text-align: left;
         background-color: $strong_dark;
-        width: 90px;
-        font-size: 0.7rem;
+        margin: 0.8rem 1.4rem 1rem;
+        font-size: 1.1rem;
         display: inline-block;
       }
     }
   }
   @media #{$large-up}{
-    width: 1035px;
+    width: 1030px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -22px;
+    margin-top: -37px;
   }
 }
  
 
 .name {
-  padding-left: 1em;
+  padding-left: 2rem;
 }
 .fade {
   -o-transition: 0.5s;
@@ -169,14 +176,15 @@ nav {
 
 div {
   &.dealbox, &.more_deals_large {
-    margin-bottom: 2rem;
-    @media #{$medium-only}{
-      height: 15rem;
-    }
-    // height: 18rem;
+    margin: 0 0 4rem 0;
     background-color: $light_dark;
     border-radius: 0.5rem;
+    @media #{$medium-only}{
+      margin: 0 2rem 4rem 2rem;
+      height: 15rem;
+    }
   }
+
   &.p {
     color: $strong_dark;
   }
@@ -186,9 +194,11 @@ footer {
   text-align: center;
   background-color: $strong_dark;
   p {
-    padding: 1rem 2rem 0;
+    line-height: 1.15rem;
+    padding: 1.5rem 6rem 1rem;
+    font-weight: 300;
     color: $light_dark;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -196,44 +206,54 @@ main {
     text-align: center;
 }
 
-.columns{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
+// .columns{
+//   padding-left: 4rem;
+//   padding-right: 4rem;
+//   @media #{$large-only}{
+//   padding-left: 2rem;
+//   padding-right: 2rem;
+//   }
+// }
 
 .content_large {
-  margin-bottom: 2rem;
-  @media #{$small-only}{
+  // width: 100%;
+  margin-bottom: 4rem;
+  border-radius: 0.3rem;
+  @media #{$medium-only}{
+    margin: 4rem;
   }
-  @media #{$medium-up}{
-    border-radius: 0.3rem;
+  @media #{$large-up}{
     margin: 2rem;
   }
   background-color: $med_color;
 }
 
 .ufo_text, .ufo_side {
-  padding: 2rem;
+  // padding: 2rem;
+  box-sizing: border-box;
   background-color: $med_color;
 }
 
 .ufo_text{
+  p {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
   span {
     font-weight: 900;
   }
   @media #{$large-up}{
     p { 
-    font-weight: 300;
-    font-size: 1.3rem;
-  }
+      font-size: 1.8rem;
+    }
     text-align: left;
-    padding: 2rem;
   }
-  padding: 0 2rem 0;
+  padding: 3rem 1rem 2rem 2rem;
 }
 
 .ufo_side {
-  padding-right: 4rem;
+  padding: 1rem 3rem 2rem 0;
   border-radius: 0.5rem;
 }
 
@@ -241,36 +261,39 @@ main {
   @media #{$small-only}{
     margin-top: 0;
   }
-    @media #{$medium-only}{
+  @media #{$medium-only}{
     margin-top: -3rem;
   }
-    @media #{$large-up}{
-    margin-top: -5.5rem;
+  @media #{$large-up}{
+    margin-top: -6rem;
     margin-bottom: 0;
   }
-  width: 14rem;
-  margin-bottom: -4rem;
+  width: 22rem;
+  margin-bottom: -5rem;
 }
 
 .find_out {
   background-color: $light_dark;
   text-align: center;
   color: #FFF;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   border-bottom: thick solid $strong_dark;
   padding: 1rem;
   @media #{$medium-only}{
-    margin: 0 35% 2rem;
+    margin: 0 25% 4rem;
   }
   @media #{$small-only}{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 
 .more_deals_small{
   color: #FFF;
-  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.28rem;
   background-color: $med_color;
+  letter-spacing: 1px;
 }
 
 .more_deals_large{
@@ -285,8 +308,9 @@ main {
 }
 
 .deal_spacer {
-  // height: 4rem;
-  padding-top: .8rem;
-  // padding-bottom: 1rem;
+  font-weight: 100;
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+  // padding-bottom: 2rem;
   border-top: thin solid #777;
 }
