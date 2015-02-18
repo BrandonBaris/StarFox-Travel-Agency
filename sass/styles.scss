@@ -46,13 +46,14 @@ h3 {
   border-top: thin solid #777;
   @media #{$medium-only}{
     padding: 3rem;
+    border-top: 0;
     border-right: thin solid #777;
     width: 45%;
     display: block;
     font-size: 3rem;
     float: left;
     height: 100%;
-    }
+  }
 }
 
 .underliner{
@@ -72,7 +73,7 @@ h3 {
 
 h4 {
   padding: 0 2rem 2rem;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   color: #FFF;
 }
 
@@ -82,11 +83,14 @@ h5 {
   font-size: 0.7rem;
   border-top: thin solid #777;
   margin: 0;
+  @media #{$large-up}{
+    border-top: 0;
+  }
 }
 
 h6 {
   font-weight: 300;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   border-bottom: thin solid #555;
   font-size: 2rem;
   margin: 0;
@@ -138,6 +142,12 @@ nav {
       }
     }
   }
+  @media #{$large-up}{
+    width: 1035px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -22px;
+  }
 }
  
 
@@ -163,7 +173,7 @@ div {
     @media #{$medium-only}{
       height: 15rem;
     }
-    height: 18rem;
+    // height: 18rem;
     background-color: $light_dark;
     border-radius: 0.5rem;
   }
@@ -268,7 +278,7 @@ main {
   text-align: center;
   div {
     background-color: $light_dark;
-    height: 4.4rem;
+    height: 3.4rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
   }
@@ -276,7 +286,7 @@ main {
 
 .deal_spacer {
   // height: 4rem;
-  padding-top: 1rem;
+  padding-top: .8rem;
   // padding-bottom: 1rem;
   border-top: thin solid #777;
 }
